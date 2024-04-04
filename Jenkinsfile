@@ -43,7 +43,7 @@ pipeline {
     }
     stage('RunDASTUsingZAP') {
       steps {
-        sh "ZAP_2.12.0_Crossplatform\\ZAP_2.12.0\\zap.sh -port 9393 -cmd -quickurl https://www.example.com -quickprogress -quickout ZAP_2.12.0_Crossplatform\\ZAP_2.12.0\\Output.html"
+        sh "/home/devops/devsecops/ZAP_2.13.0/zap.sh -port 9393 -cmd -quickurl https://www.example.com -quickprogress -quickout /home/devops/devsecops/ZAP_2.13.0/Output.html"
       }
     }
 
